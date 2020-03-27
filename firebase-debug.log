@@ -1,0 +1,48 @@
+[debug] [2020-03-27T20:13:21.396Z] ----------------------------------------------------------------------
+[debug] [2020-03-27T20:13:21.399Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-03-27T20:13:21.399Z] CLI Version:   7.7.0
+[debug] [2020-03-27T20:13:21.399Z] Platform:      darwin
+[debug] [2020-03-27T20:13:21.399Z] Node Version:  v13.11.0
+[debug] [2020-03-27T20:13:21.415Z] Time:          Sat Mar 28 2020 05:13:21 GMT+0900 (日本標準時)
+[debug] [2020-03-27T20:13:21.415Z] ----------------------------------------------------------------------
+[debug] [2020-03-27T20:13:21.415Z] 
+[debug] [2020-03-27T20:13:21.430Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-27T20:13:21.430Z] > authorizing via signed-in user
+[debug] [2020-03-27T20:13:21.431Z] [iam] checking project sendmail-demo-33e62 for permissions ["firebase.projects.get"]
+[debug] [2020-03-27T20:13:21.433Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sendmail-demo-33e62:testIamPermissions  
+
+[debug] [2020-03-27T20:13:22.272Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T20:13:22.275Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sendmail-demo-33e62  
+ 
+[debug] [2020-03-27T20:13:22.982Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/user/sendmail-demo'...
+[info] 
+[debug] [2020-03-27T20:13:22.987Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sendmail-demo-33e62/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "13"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-03-27T20:13:24.354Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/user/sendmail-demo/functions" for Cloud Functions...
+[debug] [2020-03-27T20:13:24.418Z] [worker-~diagnostic~-e2805512-3917-463e-ad30-4de3bbe3d56e]: BUSY
+[info] i  hosting: Serving hosting files from: dist
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-03-27T20:13:24.938Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/user/sendmail-demo/functions","node_version":"13.11.0"}
+[debug] [2020-03-27T20:13:24.941Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-03-27T20:13:24.946Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/user/sendmail-demo/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-27T20:13:24.948Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/user/sendmail-demo/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-27T20:13:24.949Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/user/sendmail-demo/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (/Users/user/sendmail-demo/functions/index.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:1147:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+    at Module.load (internal/modules/cjs/loader.js:996:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+    at Module.require (internal/modules/cjs/loader.js:1036:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /Users/user/.config/yarn/global/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:709:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/user/.config/yarn/global/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-27T20:13:25.202Z] [worker-~diagnostic~-e2805512-3917-463e-ad30-4de3bbe3d56e]: exited
+[debug] [2020-03-27T20:13:25.202Z] [worker-~diagnostic~-e2805512-3917-463e-ad30-4de3bbe3d56e]: FINISHED
