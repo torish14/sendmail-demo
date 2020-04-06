@@ -15,15 +15,14 @@ const mailTransport = nodemailer.createTransport({
 
 // 管理者用のメールテンプレート
 const adminContents = data => {
-  return `以下内容でホームページよりお問い合わせを受けました。
-
-お名前：
+  return `Received a contact from the website with the following contents.
+name：
 ${data.name}
 
-メールアドレス：
+email：
 ${data.email}
 
-内容：
+contents：
 ${data.contents}
 `;
 };
@@ -33,7 +32,7 @@ exports.sendMail = functions.https.onCall(async (data, context) => {
   let adminMail = {
     from: gmailEmail,
     to: adminEmail,
-    subject: "ホームページお問い合わせ",
+    subject: "contact form",
     text: adminContents(data)
   };
 
