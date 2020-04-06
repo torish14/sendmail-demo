@@ -1,51 +1,53 @@
 <template>
-    <div>
-        <v-card>
-            <v-container>
-                <h2>お問い合わせ</h2>
-                <v-form ref="form" v-model="contactFormValidation.valid" lazy-validation>
-                    <v-text-field
-                            v-model="contactForm.name"
-                            :rules="contactFormValidation.nameRules"
-                            label="名前"
-                            required
-                    ></v-text-field>
-                    <v-text-field
-                            v-model="contactForm.email"
-                            :rules="contactFormValidation.emailRules"
-                            label="メールアドレス"
-                            required
-                    ></v-text-field>
-                    <v-textarea
-                            v-model="contactForm.contents"
-                            :rules="contactFormValidation.contentsRules"
-                            label="内容"
-                            required
-                    ></v-textarea>
-                    <v-btn
-                            :loading="contactForm.loading"
-                            :disabled="!contactFormValidation.valid"
-                            @click="sendMail()"
-                            block
-                            large
-                            color="info"
-                            class="mt-4 font-weight-bold"
-                    >送信
-                    </v-btn>
-                </v-form>
-            </v-container>
-        </v-card>
-        <v-snackbar
-                v-model="snackBar.show"
-                :color="snackBar.color"
-                bottom
-                right
-                :timeout="6000"
-                class="font-weight-bold"
-        >
-            {{snackBar.message}}
-        </v-snackbar>
-    </div>
+  <div>
+    <v-card :elevation="10">
+
+      <v-container>
+        <v-form ref="form" v-model="contactFormValidation.valid" lazy-validation="">
+          <v-text-field
+            v-model="contactForm.name"
+            :rules="contactFormValidation.nameRules"
+            label="name"
+            required
+          />
+          <v-text-field
+            v-model="contactForm.email"
+            :rules="contactFormValidation.emailRules"
+            label="email"
+            required
+          />
+          <v-textarea
+            v-model="contactForm.contents"
+            :rules="contactFormValidation.emailRules"
+            label="contents"
+            required
+          />
+          <v-btn
+            :loading="contactForm.loading"
+            :disabled="!contactFormValidation.valid"
+            block
+            large
+            color="accent"
+            class="mt-4 font-weight-bold"
+            @click="sendMail()"
+          >
+            Send
+          </v-btn>
+        </v-form>
+      </v-container>
+    </v-card>
+
+    <v-snackbar
+      v-model="snackBar.show"
+      :color="snackBar.color"
+      :timeout="6000"
+      bottom
+      right
+      class="font-weight-bold"
+    >
+      {{ snackBar.message }}
+    </v-snackbar>
+  </div>
 </template>
 
 <script>
@@ -61,9 +63,9 @@ export default {
     },
     contactFormValidation: {
       valid: false,
-      nameRules: [v => !!v || '名前は必須項目です'],
-      emailRules: [v => !!v || 'メールアドレスは必須項目です'],
-      contentsRules: [v => !!v || '内容は必須項目です']
+      nameRules: [v => !!v || 'Name is required'],
+      emailRules: [v => !!v || 'E-mail must be valid'],
+      contentsRules: [v => !!v || 'Contents are required']
     },
     snackBar: {
       show: false,
@@ -82,13 +84,13 @@ export default {
             this.formReset()
             this.showSnackBar(
               'success',
-              'お問い合わせありがとうございます。送信完了しました'
+              'Thank you for contacting me.'
             )
           })
           .catch(err => {
             this.showSnackBar(
               'error',
-              '送信に失敗しました。時間をおいて再度お試しください'
+              'Transmission failed. Please try again later.'
             )
             console.log(err)
           })
