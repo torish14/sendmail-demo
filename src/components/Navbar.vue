@@ -33,15 +33,16 @@
       class="deep-purple accent-2"
       style="opacity: 0.8; background:linear-gradient(#311B92,#7C4DFF); padding-left: 20px;"
     >
-      <v-btn icon style="color: white;" @click.stop="drawer = !drawer">
+      <!-- <v-btn icon style="color: white;" @click.stop="drawer = !drawer">
         <a href="/" style="text-decoration: none; color: white;">
           <v-icon x-large>
             mdi-fire
           </v-icon>
         </a>
-      </v-btn>
-
-      <v-toolbar-title class="white--text" v-text="title" />
+      </v-btn> -->
+      <a href="/" style="text-decoration: none;">
+        <v-toolbar-title class="white--text" v-text="title"></v-toolbar-title>
+      </a>
       <v-spacer />
     </v-app-bar>
 
