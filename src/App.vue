@@ -6,26 +6,25 @@
 
       <Navbar />
 
-      <div class="titie" style="font-size: 72px; font-family: Cambay; margin-top: 32px;">
+      <section class="titie" style="font-size: 72px; font-family: Cambay; margin-top: 32px;">
         <h4 class="front" style="font-weight: 400; text-shadow: 1px 1px 3px #808080">
           Strengths
         </h4>
         <h4 class="back" style="font-weight: 300; text-shadow: 1px 1px 2px #808080">
           Finder
         </h4>
-      </div>
+      </section>
 
       <Bubble1 style="position: relative; top:-80px; right: 24px; pointer-events: none;" />
 
-      <h4 class="heading1" style="font-size: 40px; font-weight: 100; position: relative; bottom: 32px;">
+      <!-- <h4 class="heading1" style="font-size: 40px; font-weight: 100; position: relative; bottom: 32px;">
         History
-      </h4>
+      </h4> -->
 
-      <div class="card" style="display: flex;">
-        <Card1 />
+        <!-- <Card1 />
         <Card2 />
-        <Card3 />
-      </div>
+        <Card3 /> -->
+      <Card4 />
 
       <Bubble2 style="padding-left: 50px; pointer-events: none;" />
 
@@ -77,11 +76,7 @@
 
       <Bubble4 style="position: relative; bottom: 150px; pointer-events: none;" />
 
-      <h4 class="heading3" style="font-size: 40px; font-weight: 100; position: relative; bottom: 96px;">
-        Contact
-      </h4>
-
-        <ContactForm style="position: relative; bottom: 60px;" />
+      <ContactForm style="position: relative; bottom: 60px;" />
 
     </section>
     </v-content>
@@ -94,9 +89,10 @@ import Bubble1 from './components/Bubble1'
 import Bubble2 from './components/Bubble2'
 import Bubble3 from './components/Bubble3'
 import Bubble4 from './components/Bubble4'
-import Card1 from './components/Card1'
-import Card2 from './components/Card2'
-import Card3 from './components/Card3'
+// import Card1 from './components/Card1'
+// import Card2 from './components/Card2'
+// import Card3 from './components/Card3'
+import Card4 from './components/Card4'
 import Panel1 from './components/Panel1'
 import Panel2 from './components/Panel2'
 import Panel3 from './components/Panel3'
@@ -112,9 +108,10 @@ export default {
     Bubble2,
     Bubble3,
     Bubble4,
-    Card1,
-    Card2,
-    Card3,
+    // Card1,
+    // Card2,
+    // Card3,
+    Card4,
     Panel1,
     Panel2,
     Panel3,
