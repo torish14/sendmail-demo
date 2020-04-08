@@ -6,33 +6,33 @@
 
 ## v-app
 
-v-app は Vuetify を使う為に必須の要素で、Vuetify のコンポーネントには必ずv-app 要素で包括する。
+- v-app は Vuetify を使う為に必須の要素で、Vuetify のコンポーネントには必ずv-app 要素で包括する。
 
 ## v-content
 
-レイアウトシステムを使うように、サイドメニューの表示・非表示にメインコンテンツを連動させる場合に　v-content で要素を包括する。
+- レイアウトシステムを使うように、サイドメニューの表示・非表示にメインコンテンツを連動させる場合に　v-content で要素を包括する。
 
 ## v-container
 
-v-container はコンテナで、fluid属性を付与することで左右一杯にコンテナを広げたり、fill-height属性を付与することでv-container の内部要素を上下中央寄せにしたりできる。
+- v-container はコンテナで、fluid属性を付与することで左右一杯にコンテナを広げたり、fill-height属性を付与することでv-container の内部要素を上下中央寄せにしたりできる。
 
 ## v-row
 
-v-row は v-col のラッパーコンポーネントで、基本的にはセットで用いる。これは、1.xの v-layout が2.xで置き換わったもの。
+- v-row は v-col のラッパーコンポーネントで、基本的にはセットで用いる。これは、1.xの v-layout が2.xで置き換わったもの。
 
 ## v-col
 
-v-col は v-row の直接の子要素出なければならない。
+- v-col は v-row の直接の子要素出なければならない。
 これは、1.xの v-flex が 2.xで置き換わったもの。
 
 <!-- ## v-layout
 
-グリッドシステムには必須の要素で、display: flex; と同じ意味である。v-layout　の内側で　v-flex を設置するとグリッドシステムが可能になる。
+- グリッドシステムには必須の要素で、display: flex; と同じ意味である。v-layout　の内側で　v-flex を設置するとグリッドシステムが可能になる。
 また、row を入れれば横並びになり wrap を入れれば改行される。 -->
 
 <!-- ## v-flex
 
-v-layout の内側に設置することでグリッドシステムを実現できる。Vuetify は12分割のグリッドシステムを採用している。v-flex に xs12, sm6, md4 のような属性を付与することでブラウザの幅で可変するようになる。xs12 はブラウザ幅が xs（600px未満）のとき12個分のグリッドを使用する。 -->
+- v-layout の内側に設置することでグリッドシステムを実現できる。Vuetify は12分割のグリッドシステムを採用している。v-flex に xs12, sm6, md4 のような属性を付与することでブラウザの幅で可変するようになる。xs12 はブラウザ幅が xs（600px未満）のとき12個分のグリッドを使用する。 -->
 
 |属性|幅指定|
 |--|:---:|
@@ -63,31 +63,6 @@ v-row の使い方 ↓
           >
             Column
           </v-card>
-        </v-row>
-      </v-col>
-      <v-col cols="12">
-        <v-row justify="center">
-          <v-col
-            cols="6"
-            md="2"
-          >
-            <v-select
-              v-model="alignment"
-              :items="alignmentsAvailable"
-              label="Align"
-            ></v-select>
-          </v-col>
-
-          <v-col
-            cols="6"
-            md="2"
-          >
-            <v-select
-              v-model="justify"
-              :items="justifyAvailable"
-              label="Justify"
-            ></v-select>
-          </v-col>
         </v-row>
       </v-col>
     </v-row>
