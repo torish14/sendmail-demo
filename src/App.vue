@@ -2,7 +2,7 @@
   <v-app light>
     <v-content>
 
-    <section class="container">
+    <!-- <section class="container"> -->
 
       <Navbar />
 
@@ -28,11 +28,7 @@
 
       <Bubble2 style="padding-left: 50px; pointer-events: none;" />
 
-      <h4 class="heading2" style="font-size: 40px; font-weight: 100; position: relative; top: 32px;">
-        Description
-      </h4>
-
-      <div class="panel" style="display: flex;">
+      <!-- <div class="panel" style="display: flex;">
         <div class="influencing" style="position: relative; top: 70px;">
           <li style="font-size: 18px; border-bottom: solid 2px rgba(255, 204, 0, 1); max-width: 120px;">
             influencing
@@ -64,13 +60,14 @@
           <br>
           <Panel4 />
         </div>
-      </div>
+      </div> -->
+      <Panel5 />
 
       <Bubble3 style="padding-left: 80px; position: relative; bottom: 250px; pointer-events: none;" />
 
-      <h4 class="heading3" style="font-size: 40px; font-weight: 100; position: relative; bottom:110px;">
+      <!-- <h4 class="heading3" style="font-size: 40px; font-weight: 100; position: relative; bottom:110px;">
         My themes
-      </h4>
+      </h4> -->
 
       <Themes />
 
@@ -78,7 +75,7 @@
 
       <ContactForm style="position: relative; bottom: 60px;" />
 
-    </section>
+    <!-- </section> -->
     </v-content>
   </v-app>
 </template>
@@ -93,10 +90,11 @@ import Bubble4 from './components/Bubble4'
 // import Card2 from './components/Card2'
 // import Card3 from './components/Card3'
 import Card4 from './components/Card4'
-import Panel1 from './components/Panel1'
-import Panel2 from './components/Panel2'
-import Panel3 from './components/Panel3'
-import Panel4 from './components/Panel4'
+// import Panel1 from './components/Panel1'
+// import Panel2 from './components/Panel2'
+// import Panel3 from './components/Panel3'
+// import Panel4 from './components/Panel4'
+import Panel5 from './components/Panel5'
 import Themes from './components/Themes'
 import ContactForm from './components/ContactForm'
 
@@ -112,10 +110,11 @@ export default {
     // Card2,
     // Card3,
     Card4,
-    Panel1,
-    Panel2,
-    Panel3,
-    Panel4,
+    // Panel1,
+    // Panel2,
+    // Panel3,
+    // Panel4,
+    Panel5,
     Themes,
     ContactForm
   },
