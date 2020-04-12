@@ -69,7 +69,8 @@
         My themes
       </h4> -->
 
-      <Themes />
+      <!-- <Themes /> -->
+      <Themes1 />
 
       <Bubble4 style="position: relative; bottom: 150px; pointer-events: none;" />
 
@@ -95,7 +96,8 @@ import Card4 from './components/Card4'
 // import Panel3 from './components/Panel3'
 // import Panel4 from './components/Panel4'
 import Panel5 from './components/Panel5'
-import Themes from './components/Themes'
+import Themes1 from './components/Themes1'
+// import Themes from './components/Themes'
 import ContactForm from './components/ContactForm'
 
 export default {
@@ -115,7 +117,8 @@ export default {
     // Panel3,
     // Panel4,
     Panel5,
-    Themes,
+    Themes1,
+    // Themes,
     ContactForm
   },
   data () {
