@@ -4,67 +4,67 @@
       Description
     </h1>
 
-    <v-container fluid>
-      <!-- <v-row>
-        <v-col xs12 sm6 md4 lg3> -->
+      <v-container fluid>
+      <v-row>
+        <v-col xs12>
+          <li class="influencing mb-7">influencing</li>
+          <v-expansion-panels popout="" focusable="" v-for="panel in panels1" :key="panel.name">
+          <v-expansion-panel  max-width="380" :class="panel.header">
+            <v-expansion-panel-header :class="panel.header">
+              {{ panel.header }}
+            </v-expansion-panel-header>
+            <v-expansion-panel-content class="subtitle-2 grey--text">
+              {{ panel.content }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
 
-        <!-- <v-app> -->
-          <!-- <v-row justify=""> -->
-            <v-expansion-panels popout="" focusable="">
-              <v-expansion-panel v-for="panel in panels1" :key="panel.name" max-width="400">
-                <v-expansion-panel-header>
-                  {{ panel.header }}
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="subtitle-2 grey--text">
-                  {{ panel.content }}
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-          <!-- </v-row> -->
+        <v-col xs12>
+          <li class="executing mb-7">executing</li>
+          <v-expansion-panels popout="" focusable="" v-for="panel in panels2" :key="panel.name">
+          <v-expansion-panel  max-width="380" :class="panel.header">
+            <v-expansion-panel-header :class="panel.header">
+              {{ panel.header }}
+            </v-expansion-panel-header>
+            <v-expansion-panel-content class="subtitle-2 grey--text">
+              {{ panel.content }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
 
-          <!-- <v-row justify="center"> -->
-            <v-expansion-panels popout="" focusable="">
-              <v-expansion-panel v-for="panel in panels2" :key="panel.name">
-                <v-expansion-panel-header>
-                  {{ panel.header }}
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="subtitle-2 grey--text">
-                  {{ panel.content }}
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-          <!-- </v-row> -->
+        <v-col xs12>
+          <li class="strategic-thinking mb-7">strategic-thinking</li>
+          <v-expansion-panels popout="" focusable="" v-for="panel in panels3" :key="panel.name">
+          <v-expansion-panel  max-width="380" :class="panel.header">
+            <v-expansion-panel-header :class="panel.header">
+              {{ panel.header }}
+            </v-expansion-panel-header>
+            <v-expansion-panel-content class="subtitle-2 grey--text">
+              {{ panel.content }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
 
-          <!-- <v-row justify="center"> -->
-            <v-expansion-panels popout="" focusable="">
-              <v-expansion-panel v-for="panel in panels3" :key="panel.name">
-                <v-expansion-panel-header>
-                  {{ panel.header }}
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="subtitle-2 grey--text">
-                  {{ panel.content }}
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-          <!-- </v-row> -->
+        <v-col xs12>
+          <li class="relationship-building mb-7">relationship-building</li>
+          <v-expansion-panels popout="" focusable="" v-for="panel in panels4" :key="panel.name">
+          <v-expansion-panel  max-width="380">
+            <v-expansion-panel-header :class="panel.header">
+              {{ panel.header }}
+            </v-expansion-panel-header>
+            <v-expansion-panel-content class="subtitle-2 grey--text">
+              {{ panel.content }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
 
-          <!-- <v-row justify="center"> -->
-            <v-expansion-panels popout="" focusable="">
-              <v-expansion-panel v-for="panel in panels4" :key="panel.name">
-                <v-expansion-panel-header>
-                  {{ panel.header }}
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="subtitle-2 grey--text">
-                  {{ panel.content }}
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-          <!-- </v-row> -->
-        <!-- </v-app> -->
-
-        <!-- </v-col>
-      </v-row> -->
+      </v-row>
     </v-container>
+
   </div>
 </template>
 
@@ -91,7 +91,7 @@ export default {
         { header: 'Discipline', content: 'People exceptionally talented in the Discipline theme enjoy routine and structure. Their world is best described by the order they create.' },
         { header: 'Focus', content: 'People exceptionally talented in the Focus theme can take a direction, follow through and make the corrections necessary to stay on track. They prioritize, then act.' },
         { header: 'Responsibility', content: 'People exceptionally talented in the Responsibility theme take psychological ownership of what they say they will do. They are committed to stable values such as honesty and loyalty.' },
-        { header: 'Restorative', content: 'People exceptionally talented in the Restorative theme are adept at dealing with problems. They are good at figuring out what is wrong and resolving it.' },
+        { header: 'Restorative', content: 'People exceptionally talented in the Restorative theme are adept at dealing with problems. They are good at figuring out what is wrong and resolving it.' }
       ],
       panels3: [
         { header: 'Analytical', content: 'People exceptionally talented in the Analytical theme search for reasons and causes. They have the ability to think about all of the factors that might affect a situation.' },
@@ -101,7 +101,7 @@ export default {
         { header: 'Input', content: 'People exceptionally talented in the Input theme have a need to collect and archive. They may accumulate information, ideas, artifacts or even relationships.' },
         { header: 'Intellection', content: 'People exceptionally talented in the Intellection theme are characterized by their intellectual activity. They are introspective and appreciate intellectual discussions.' },
         { header: 'Learner', content: 'People exceptionally talented in the Learner theme have a great desire to learn and want to continuously improve. The process of learning, rather than the outcome, excites them.' },
-        { header: 'Strategic', content: 'People exceptionally talented in the Strategic theme create alternative ways to proceed. Faced with any given scenario, they can quickly spot the relevant patterns and issues.' },
+        { header: 'Strategic', content: 'People exceptionally talented in the Strategic theme create alternative ways to proceed. Faced with any given scenario, they can quickly spot the relevant patterns and issues.' }
       ],
       panels4: [
         { header: 'Adaptability', content: 'People exceptionally talented in the Adaptability theme prefer to go with the flow. They tend to be "now" people who take things as they come and discover the future one day at a time.' },
@@ -112,9 +112,47 @@ export default {
         { header: 'Includer', content: 'People exceptionally talented in the Includer theme accept others. They show awareness of those who feel left out and make an effort to include them.' },
         { header: 'Individualization', content: 'People exceptionally talented in the Individualization theme are intrigued with the unique qualities of each person. They have a gift for figuring out how different people can work together productively.' },
         { header: 'Positivity', content: 'People exceptionally talented in the Positivity theme have contagious enthusiasm. They are upbeat and can get others excited about what they are going to do.' },
-        { header: 'Relator', content: 'People exceptionally talented in the Relator theme enjoy close relationships with others. They find deep satisfaction in working hard with friends to achieve a goal.' },
+        { header: 'Relator', content: 'People exceptionally talented in the Relator theme enjoy close relationships with others. They find deep satisfaction in working hard with friends to achieve a goal.' }
       ]
     }
   }
 }
 </script>
+
+<style>
+.Activator {
+  background-color: rgba(255, 204, 0, 0.7);
+}
+
+.Achiever {
+  background-color: rgba(68, 0, 0, 0.7);
+}
+
+.Analytical {
+  background-color: rgba(153, 51, 102, 0.7);
+}
+
+.Adaptability {
+  background-color: rgba(0, 51, 51, 0.7);
+}
+
+.influencing {
+  border-bottom: solid 2px rgba(255, 204, 0, 1);
+  width: 110px;
+}
+
+.executing {
+  border-bottom: solid 2px rgba(68, 0, 0, 1);
+  width: 100px;
+}
+
+.strategic-thinking {
+  border-bottom: solid 2px rgba(153, 51, 102, 1);
+  width: 155px;
+}
+
+.relationship-building {
+  border-bottom: solid 2px rgba(0, 51, 51, 1);
+  width: 175px;
+}
+</style>
