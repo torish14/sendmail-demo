@@ -6,14 +6,14 @@
 
       <Navbar />
 
-      <section class="titie" style="font-size: 72px; font-family: Cambay; margin-top: 32px;">
+      <!-- <section class="titie" style="font-size: 72px; font-family: Cambay; margin-top: 32px;">
         <h4 class="front" style="font-weight: 400; text-shadow: 1px 1px 3px #808080">
           Strengths
         </h4>
         <h4 class="back" style="font-weight: 300; text-shadow: 1px 1px 2px #808080">
           Finder
         </h4>
-      </section>
+      </section> -->
 
       <Bubble1 style="position: relative; top:-80px; right: 24px; pointer-events: none;" />
 
