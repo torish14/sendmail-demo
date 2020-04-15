@@ -131,10 +131,7 @@
   text-shadow: 1px 1px 2px #808080;
   background-color: white;
   margin-bottom: 10px;
-  padding-top: 0px;
-  padding-bottom:0px;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 0;
   height: 70px;
 }
 </style>
