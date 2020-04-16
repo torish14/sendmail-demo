@@ -1,16 +1,16 @@
 <template>
   <v-app light>
-    <v-content>
+    <!-- <v-content> -->
       <Navbar />
       <Bubble1 class="bubble1" />
       <Cards />
-      <Bubble2 class="bubble2 pl-12" />
+      <Bubble2 class="bubble2 ml-12" />
       <Panels />
-      <Bubble3 class="bubble3 pl-20" />
+      <Bubble3 class="bubble3 ml-20" />
       <Themes />
-      <Bubble4 class="bubble4" />
-      <ContactForm style="position: relative; bottom: 60px;" />
-    </v-content>
+      <Bubble4 class="bubble4 ma-10" />
+      <ContactForm class="my-12" />
+    <!-- </v-content> -->
   </v-app>
 </template>
 
@@ -60,4 +60,5 @@ export default {
 .bubble1, .bubble2, .bubble3, .bubble4 {
   pointer-events: none;
 }
+
 </style>
