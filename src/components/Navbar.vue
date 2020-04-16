@@ -41,7 +41,7 @@
         </a>
       </v-btn> -->
       <a href="/" style="text-decoration: none;">
-        <v-toolbar-title class="white--text" v-text="title"></v-toolbar-title>
+        <v-toolbar-title class="white--text headline" v-text="title"></v-toolbar-title>
       </a>
       <v-spacer />
     </v-app-bar>
