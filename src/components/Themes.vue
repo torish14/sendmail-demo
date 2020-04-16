@@ -1,125 +1,120 @@
 <template>
-  <!-- <div class="image" style="position: relative; bottom: 80px; left: 80px; height: 900px;"> -->
-    <div>
-      <h1 class="display-2 font-weight-thin">My themes</h1>
-    <!-- <v-hover v-slot:default="{ hover }" close-delay="200">
-    <v-card :elevation="hover ? 16 : 2" max-width="990"> -->
-    <img src="../assets/Clifton DNA.png" alt="" style="">
-    <!-- </v-card>
-    </v-hover> -->
-    <div class="strengthen" style="position: relative; top: 20px;">
-      <p><strong style="font-size: 14px;">Strengthen</strong></p>
-      <p><strong style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">1. Self-Assurance</strong></p>
-      <p><strong style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">2. Command</strong></p>
-      <p><strong style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">3. Competition</strong></p>
-      <p><strong style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">4. Ideation</strong></p>
-      <p><strong style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">5. Strategic</strong></p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        6. Belief
-      </p>
-      <p style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">
-        7. Futuristic
-      </p>
-      <p style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">
-        8. Activator
-      </p>
-      <p style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">
-        9. Maximizer
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        10. Achiever
-      </p>
-    </div>
-    <div class="confirm1" style="position: relative; top: -420px; left: 280px;">
-      <p><strong style="font-size: 14px;">Confirm</strong></p>
-      <p style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">
-        11. Woo
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        12. Focus
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        13. Connectedness
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        14. Relator
-      </p>
-      <p style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">
-        15. Learner
-      </p>
-      <p style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">
-        16. Intellection
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        17. Individualization
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        18. Responsibility
-      </p>
-      <p style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">
-        19. Input
-      </p>
-      <p style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">
-        20. Significance
-      </p>
-    </div>
-    <div class="confirm2" style="position: relative; top: -820px; left: 560px;">
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        21. Positivity
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        22. Includer
-      </p>
-      <p style="border-left: solid 4px rgba(255, 204, 0, 1); padding-left: 8px;">
-        23. Communication
-      </p>
-      <p style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">
-        24. Analytical
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        25. Developer
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        26. Empathy
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        27. Arranger
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        28. Adaptability
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        29. Discipline
-      </p>
-      <p style="border-left: solid 4px rgba(153, 51, 102, 1); padding-left: 8px;">
-        30. Context
-      </p>
-    </div>
-    <div class="confirm3" style="position: relative; top: -1220px; left: 840px;">
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        31. Restorative
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        32. Deliberative
-      </p>
-      <p style="border-left: solid 4px rgba(68, 0, 0, 1); padding-left: 8px;">
-        33. Consistency
-      </p>
-      <p style="border-left: solid 4px rgba(0, 51, 51, 1); padding-left: 8px;">
-        34. Harmony
-      </p>
-    </div>
+  <div>
+    <h1 class="display-2 font-weight-thin">
+      My themes
+    </h1>
+    <v-img src="../assets/Clifton DNA.png" class="my-2"></v-img>
 
+    <v-container fluid>
+      <v-row>
+          <v-col>
+          <section class="strengthen">
+            <p><strong>Strengthen</strong></p>
+            <div v-for="(theme, index) in themes1" :key="`first-${index}`">
+              <p><strong :class="theme.name">{{ index + 1 }}. {{ theme.name }}</strong></p>
+            </div>
+          </section>
+          </v-col>
+
+          <v-col>
+            <div class="10th">
+            <p><strong>Confirm</strong></p>
+            <div v-for="(theme, index) in themes2" :key="`second-${index}`">
+              <p :class="theme.name">{{ index + 11 }}. {{ theme.name }}</p>
+            </div>
+          </div>
+          </v-col>
+
+          <v-col>
+          <div class="20th mt-10">
+            <div v-for="(theme, index) in themes3" :key="`third-${index}`">
+              <p :class="theme.name">{{ index + 21 }}. {{ theme.name }}</p>
+            </div>
+          </div>
+          </v-col>
+
+          <v-col>
+            <div class="30th mt-10">
+            <div v-for="(theme, index) in themes4" :key="`forth-${index}`">
+              <p :class="theme.name">{{ index + 31 }}. {{ theme.name }}</p>
+            </div>
+          </div>
+          </v-col>
+
+      </v-row>
+    </v-container>
   </div>
-  <!-- </div> -->
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      themes1: [
+        { name: 'Self-Assurance' },
+        { name: 'Command' },
+        { name: 'Competition' },
+        { name: 'Ideation' },
+        { name: 'Strategic' },
+        { name: 'Belief' },
+        { name: 'Futuristic' },
+        { name: 'Activator' },
+        { name: 'Maximizer' },
+        { name: ' Achiever' }
+      ],
+      themes2: [
+        { name: 'Woo' },
+        { name: 'Focus' },
+        { name: 'Connectedness' },
+        { name: ' Relator' },
+        { name: ' Learner' },
+        { name: 'Intellection' },
+        { name: 'Individualization' },
+        { name: 'Responsibility' },
+        { name: ' Input' },
+        { name: 'Significance' }
+      ],
+      themes3: [
+        { name: 'Positivity' },
+        { name: 'Includer' },
+        { name: 'Communication' },
+        { name: ' Analytical' },
+        { name: ' Developer' },
+        { name: 'Empathy' },
+        { name: 'Arranger' },
+        { name: 'Adaptability' },
+        { name: 'Discipline' },
+        { name: 'Context' }
+      ],
+      themes4: [
+        { name: 'Restorative' },
+        { name: 'Deliberative' },
+        { name: ' Consistency' },
+        { name: 'Harmony' }
+      ]
+    }
+  }
 }
 </script>
 
 <style>
+.Self-Assurance, .Command, .Competition, .Activator, .Maximizer, .Woo, .Significance, .Communication  {
+  border-left: solid 4px rgba(255, 204, 0, 1);
+  padding-left: 8px;
+}
 
+.Ideation, .Strategic, .Futuristic, .Learner, .Intellection, .Input, .Analytical, .Context {
+  border-left: solid 4px rgba(153, 51, 102, 1);
+  padding-left: 8px;
+}
+
+.Belief, .Achiever, .Focus, .Responsibility, .Arranger, .Discipline, .Restorative, .Deliberative, .Consistency {
+  border-left: solid 4px rgba(68, 0, 0, 1);
+  padding-left: 8px;
+}
+
+.Connectedness, .Relator, .Individualization, .Positivity, .Includer, .Developer, .Empathy, .Adaptability, .Harmony {
+  border-left: solid 4px rgba(0, 51, 51, 1);
+  padding-left: 8px;
+}
 </style>
