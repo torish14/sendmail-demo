@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1 class="display-2 font-weight-thin">
+    <h1 class="display-2 font-weight-thin ml-2">
       My themes
     </h1>
     <v-img src="../assets/Clifton DNA.png" class="my-2"></v-img>
 
-    <v-container fluid>
+    <v-container fluid class="my-2">
       <v-row>
           <v-col>
           <section class="strengthen">
