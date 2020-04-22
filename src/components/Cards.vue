@@ -5,7 +5,6 @@
     </h1>
 
     <v-container fluid class="my-2">
-
       <v-row>
         <v-col cols="12" sm="12" md="4" lg="4" v-for="card in cards" :key="card.name">
           <v-card text class="ma-2" :elevation="20" max-width="400">
@@ -23,10 +22,8 @@
               </div>
             </v-card-text>
           </v-card>
-
         </v-col>
       </v-row>
-
   </v-container>
 
   </div>
