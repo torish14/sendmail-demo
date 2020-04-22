@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="display-2 font-weight-thin ml-5">Contact</h1>
+    <h1 class="display-2 font-weight-thin ml-2">Contact</h1>
 
-    <v-card :elevation="10" class="mt-5 mx-3">
+    <v-card :elevation="10" class="my-5 mx-2">
       <v-container>
         <v-form ref="form" v-model="contactFormValidation.valid" lazy-validation="">
           <v-text-field
