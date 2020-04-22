@@ -24,7 +24,7 @@ export default {
               },
               {
 
-                x: 100,
+                x: 95,
                 y: 90,
                 r: 10
               },
