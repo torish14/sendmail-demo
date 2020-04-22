@@ -51,8 +51,4 @@
   /* margin-bottom: 10px; */
   height: 70px;
 }
-
-.v-card__title {
-
-}
 </style>
