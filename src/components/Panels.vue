@@ -4,11 +4,26 @@
       Description
     </h1>
 
+    <!-- <v-app> -->
       <v-container fluid class="my-2">
-      <v-row>
-        <v-col>
-          <li class="influencing mb-7">influencing</li>
-            <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels1" :key="`first-${index}`">
+        <v-row>
+          <v-col cols="12" sm="6" md="3" lg="3">
+            <li class="influencing mb-7">influencing</li>
+              <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels1" :key="`first-${index}`">
+              <v-expansion-panel  max-width="380">
+                <v-expansion-panel-header :class="panel.abbreviation">
+                  {{ panel.header }}
+                </v-expansion-panel-header>
+                <v-expansion-panel-content class="subtitle-2 grey--text">
+                  {{ panel.content }}
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </v-col>
+
+          <v-col cols="12" sm="6" md="3" lg="3">
+            <li class="executing mb-7">executing</li>
+            <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels2" :key="`second-${index}`">
             <v-expansion-panel  max-width="380">
               <v-expansion-panel-header :class="panel.abbreviation">
                 {{ panel.header }}
@@ -17,53 +32,40 @@
                 {{ panel.content }}
               </v-expansion-panel-content>
             </v-expansion-panel>
-          </v-expansion-panels>
-        </v-col>
+            </v-expansion-panels>
+          </v-col>
 
-        <v-col>
-          <li class="executing mb-7">executing</li>
-          <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels2" :key="`second-${index}`">
-          <v-expansion-panel  max-width="380">
-            <v-expansion-panel-header :class="panel.abbreviation">
-              {{ panel.header }}
-            </v-expansion-panel-header>
-            <v-expansion-panel-content class="subtitle-2 grey--text">
-              {{ panel.content }}
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-          </v-expansion-panels>
-        </v-col>
+          <v-col cols="12" sm="6" md="3" lg="3">
+            <li class="strategic-thinking mb-7">strategic-thinking</li>
+            <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels3" :key="`third-${index}`">
+            <v-expansion-panel  max-width="380">
+              <v-expansion-panel-header :class="panel.abbreviation">
+                {{ panel.header }}
+              </v-expansion-panel-header>
+              <v-expansion-panel-content class="subtitle-2 grey--text">
+                {{ panel.content }}
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            </v-expansion-panels>
+          </v-col>
 
-        <v-col>
-          <li class="strategic-thinking mb-7">strategic-thinking</li>
-          <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels3" :key="`third-${index}`">
-          <v-expansion-panel  max-width="380">
-            <v-expansion-panel-header :class="panel.abbreviation">
-              {{ panel.header }}
-            </v-expansion-panel-header>
-            <v-expansion-panel-content class="subtitle-2 grey--text">
-              {{ panel.content }}
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-          </v-expansion-panels>
-        </v-col>
+          <v-col cols="12" sm="6" md="3" lg="3">
+            <li class="relationship-building mb-7">relationship-building</li>
+            <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels4" :key="`forth-${index}`">
+            <v-expansion-panel  max-width="380">
+              <v-expansion-panel-header :class="panel.abbreviation">
+                {{ panel.header }}
+              </v-expansion-panel-header>
+              <v-expansion-panel-content class="subtitle-2 grey--text">
+                {{ panel.content }}
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            </v-expansion-panels>
+          </v-col>
 
-        <v-col>
-          <li class="relationship-building mb-7">relationship-building</li>
-          <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels4" :key="`forth-${index}`">
-          <v-expansion-panel  max-width="380">
-            <v-expansion-panel-header :class="panel.abbreviation">
-              {{ panel.header }}
-            </v-expansion-panel-header>
-            <v-expansion-panel-content class="subtitle-2 grey--text">
-              {{ panel.content }}
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-          </v-expansion-panels>
-        </v-col>
-
-      </v-row>
-    </v-container>
+        </v-row>
+      </v-container>
+    <!-- </v-app> -->
 
   </div>
 </template>
