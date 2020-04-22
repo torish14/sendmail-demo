@@ -11,7 +11,7 @@
           <section class="strengthen">
             <p><strong>Strengthen</strong></p>
             <div v-for="(theme, index) in themes1" :key="`first-${index}`">
-              <p><strong :class="theme.name">{{ index + 1 }}. {{ theme.name }}</strong></p>
+              <p><strong :class="theme.name" class="subtitle-2">{{ index + 1 }}. {{ theme.name }}</strong></p>
             </div>
           </section>
           </v-col>
@@ -20,7 +20,7 @@
             <div class="10th">
             <p><strong>Confirm</strong></p>
             <div v-for="(theme, index) in themes2" :key="`second-${index}`">
-              <p :class="theme.name">{{ index + 11 }}. {{ theme.name }}</p>
+              <p :class="theme.name" class="subtitle-2">{{ index + 11 }}. {{ theme.name }}</p>
             </div>
           </div>
           </v-col>
@@ -28,7 +28,7 @@
           <v-col cols="6" sm="6" md="3" lg="3">
           <div class="20th mt-10">
             <div v-for="(theme, index) in themes3" :key="`third-${index}`">
-              <p :class="theme.name">{{ index + 21 }}. {{ theme.name }}</p>
+              <p :class="theme.name" class="subtitle-2">{{ index + 21 }}. {{ theme.name }}</p>
             </div>
           </div>
           </v-col>
@@ -36,7 +36,7 @@
           <v-col cols="6" sm="6" md="3" lg="3">
             <div class="30th mt-10">
             <div v-for="(theme, index) in themes4" :key="`forth-${index}`">
-              <p :class="theme.name">{{ index + 31 }}. {{ theme.name }}</p>
+              <p :class="theme.name" class="subtitle-2">{{ index + 31 }}. {{ theme.name }}</p>
             </div>
           </div>
           </v-col>

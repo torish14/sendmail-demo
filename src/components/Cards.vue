@@ -47,9 +47,12 @@
 .into {
   color: black;
   text-shadow: 1px 1px 2px #808080;
-  background-color: white;
-  margin-bottom: 10px;
-  padding: 0;
+  /* background-color: white; */
+  /* margin-bottom: 10px; */
   height: 70px;
+}
+
+.v-card__title {
+
 }
 </style>
