@@ -2,7 +2,7 @@
   <div>
     <h1 class="display-2 font-weight-thin ml-2">Contact</h1>
 
-    <v-card :elevation="10" class="my-5 mx-2">
+    <v-card :elevation="10" class="my-5 mx-5">
       <v-container>
         <v-form ref="form" v-model="contactFormValidation.valid" lazy-validation="">
           <v-text-field
