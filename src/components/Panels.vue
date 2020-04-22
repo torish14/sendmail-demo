@@ -3,11 +3,11 @@
     <h1 class="display-2 font-weight-thin ml-2">
       Description
     </h1>
-    
+
     <v-container fluid class="my-2">
       <v-row>
         <v-col cols="12" sm="6" md="3" lg="3">
-          <li class="influencing mb-7">influencing</li>
+          <li class="influencing mb-7 ml-2">influencing</li>
             <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels1" :key="`first-${index}`">
             <v-expansion-panel  max-width="380">
               <v-expansion-panel-header :class="panel.abbreviation">
@@ -21,7 +21,7 @@
         </v-col>
 
         <v-col cols="12" sm="6" md="3" lg="3">
-          <li class="executing mb-7">executing</li>
+          <li class="executing mb-7 ml-2">executing</li>
           <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels2" :key="`second-${index}`">
           <v-expansion-panel  max-width="380">
             <v-expansion-panel-header :class="panel.abbreviation">
@@ -35,7 +35,7 @@
         </v-col>
 
         <v-col cols="12" sm="6" md="3" lg="3">
-          <li class="strategic-thinking mb-7">strategic-thinking</li>
+          <li class="strategic-thinking mb-7 ml-2">strategic-thinking</li>
           <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels3" :key="`third-${index}`">
           <v-expansion-panel  max-width="380">
             <v-expansion-panel-header :class="panel.abbreviation">
@@ -49,7 +49,7 @@
         </v-col>
 
         <v-col cols="12" sm="6" md="3" lg="3">
-          <li class="relationship-building mb-7">relationship-building</li>
+          <li class="relationship-building mb-7 ml-2">relationship-building</li>
           <v-expansion-panels popout="" focusable="" v-for="(panel, index) in panels4" :key="`forth-${index}`">
           <v-expansion-panel  max-width="380">
             <v-expansion-panel-header :class="panel.abbreviation">
