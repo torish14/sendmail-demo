@@ -113,3 +113,13 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Serve in local
+```
+firebase serve
+```
+
+### Deploy
+```
+firebase deploy
+```
