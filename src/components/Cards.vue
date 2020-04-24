@@ -7,8 +7,8 @@
     <v-container fluid class="my-2">
       <v-row>
         <v-col cols="12" sm="12" md="4" lg="4" v-for="card in cards" :key="card.name">
-          <v-card text class="ma-2" :elevation="20" max-width="400">
-            <v-img class="white--text align-end" height="250px" width="400px" :src="card.src" style="opacity: 0.8;">
+          <v-card text class="ma-2" :elevation="20" max-width="700">
+            <v-img class="white--text align-end" height="250px" :src="card.src" style="opacity: 0.8;">
               <v-card-title :class="card.title">
                 {{ card.title }}
               </v-card-title>
