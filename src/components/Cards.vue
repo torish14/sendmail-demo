@@ -34,7 +34,7 @@
     data() {
       return {
         cards: [
-          { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqjSvZihh0pM6D-5T-ePmu3ByhHsqPjZ2fbpoVic92zGXr8Zs&s', title: 'Interview 2 million successful people about successful factors', subtitle: 'Step1', text: 'The development of the Strengths Finder started an interview with 2 million people who unconsciously explored what "talents" were being used when one was performing.' },
+          { src: 'https://image.itmedia.co.jp/news/articles/1709/13/kf_jobs_01.jpg', title: 'Interview 2 million successful people about successful factors', subtitle: 'Step1', text: 'The development of the Strengths Finder started an interview with 2 million people who unconsciously explored what "talents" were being used when one was performing.' },
           { src: 'https://goomoolabo.com/blog/wp-content/uploads/2019/06/balloon-heart-love-romance.jpg', title: 'Discover 5000 "talents"', subtitle: 'Step2', text: 'In the interview, about 5,000 different "talents" were found. "telents" are a pattern of thoughts, emotions and behaviors that appear unconsciously.' },
           { src: 'https://i.pinimg.com/originals/44/7d/db/447ddb1822a74d28c07b95c548a91178.jpg', title: 'Classify 5000 "talents" into 34 "themes"', subtitle: 'Step3', text: 'The 34 "themes" classified similar "talents" and summarized them clearly. Now, you should take the Strengths Finder today and wake up to your "talents".' }
         ]
