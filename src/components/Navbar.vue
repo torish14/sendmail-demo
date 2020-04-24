@@ -70,7 +70,7 @@
       class="deep-purple accent-2"
       style="opacity: 0.8; background:linear-gradient(#311B92,#7C4DFF); padding-left: 30px;"
     >
-      <span class="white--text" style="opacity: 0.8;">&copy; 2020 torish</span>
+      <span class="white--text" style="opacity: 0.8;">Copyright &copy; 2020 torish</span>
     </v-footer>
   <!-- </v-app> -->
   </nav>
