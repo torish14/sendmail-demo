@@ -5,13 +5,13 @@
     </h1>
     <v-img src="../assets/Clifton DNA.png" class="my-4 mx-2" max-width="1200"></v-img>
 
-    <v-container fluid class="my-2 mx-2">
+    <v-container class="my-2 mx-2">
       <v-row>
           <v-col cols="6" sm="6" md="3" lg="3">
           <section class="strengthen">
-            <p><strong>Strengthen</strong></p>
+            <p><strong class>Strengthen</strong></p>
             <div v-for="(theme, index) in themes1" :key="`first-${index}`">
-              <p><strong :class="theme.name" class="subtitle-2">{{ index + 1 }}. {{ theme.name }}</strong></p>
+              <p class="subtitle-2"><strong :class="theme.name">{{ index + 1 }}. {{ theme.name }}</strong></p>
             </div>
           </section>
           </v-col>
