@@ -1,16 +1,18 @@
 <template>
-  <v-app>
-    <Navbar />
-    <Heading />
-    <Bubble1 class="bubble1" />
-    <Cards />
-    <Bubble2 class="bubble2 ml-12" />
-    <Panels />
-    <Bubble3 class="bubble3 ml-20" />
-    <Themes />
-    <Bubble4 class="bubble4 ma-10" />
-    <ContactForm class="my-12" />
-  </v-app>
+  <section class="container">
+    <v-app>
+      <Navbar />
+      <Heading />
+      <Bubble1 class="bubble1" />
+      <Cards />
+      <Bubble2 class="bubble2 ml-12" />
+      <Panels />
+      <Bubble3 class="bubble3 ml-20" />
+      <Themes />
+      <Bubble4 class="bubble4 ma-10" />
+      <ContactForm class="my-12" />
+    </v-app>
+  </section>
 </template>
 
 <script>
