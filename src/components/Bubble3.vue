@@ -13,7 +13,7 @@ export default {
             pointBackgroundColor: 'rgba(68, 0, 0, 1)', // 点の塗り潰しの色
             data: [
               {
-                x: 100,
+                x: 95,
                 y: 110,
                 r: 5
               },
